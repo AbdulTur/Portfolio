@@ -1,14 +1,15 @@
 // src/components/Hero.js
-import React, { useEffect, useRef } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
-import Particles from '@tsparticles/react';
-import { loadFull } from 'tsparticles';
+import Particles, { initParticlesEngine } from '@tsparticles/react';
+import { loadSlim } from '@tsparticles/slim';
 import './Hero.css';
 
 const Hero = () => {
   const heroRef = useRef(null);
   const textRef = useRef(null);
   const subTextRef = useRef(null);
+  const [init, setInit] = useState(false);
 
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { ease: 'power1.out' } });
@@ -28,82 +29,95 @@ const Hero = () => {
     );
   }, []);
 
-  const particlesInit = async (main) => {
-    await loadFull(main);
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
+
+  const particlesLoaded = (container) => {
+    console.log(container);
   };
 
   return (
     <div className="hero h-screen flex items-center justify-center" ref={heroRef}>
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        options={{
-          background: {
-            color: {
-              value: "#000000",
+      {init && (
+        <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={{
+            background: {
+              color: {
+                value: "#000000",
+              },
             },
-          },
-          fpsLimit: 60,
-          interactivity: {
-            events: {
-              onHover: {
+            fpsLimit: 120,
+            interactivity: {
+              events: {
+                onClick: {
+                  enable: true,
+                  mode: "push",
+                },
+                onHover: {
+                  enable: true,
+                  mode: "repulse",
+                },
+                resize: true,
+              },
+              modes: {
+                push: {
+                  quantity: 4,
+                },
+                repulse: {
+                  distance: 200,
+                  duration: 0.4,
+                },
+              },
+            },
+            particles: {
+              color: {
+                value: "#ffffff",
+              },
+              links: {
+                color: "#ffffff",
+                distance: 150,
                 enable: true,
-                mode: "repulse",
+                opacity: 0.5,
+                width: 1,
               },
-              resize: true,
-            },
-            modes: {
-              repulse: {
-                distance: 200,
-                duration: 0.4,
-              },
-            },
-          },
-          particles: {
-            color: {
-              value: "#ffffff",
-            },
-            links: {
-              color: "#ffffff",
-              distance: 150,
-              enable: true,
-              opacity: 0.5,
-              width: 1,
-            },
-            collisions: {
-              enable: true,
-            },
-            move: {
-              directions: "none",
-              enable: true,
-              outModes: {
-                default: "bounce",
-              },
-              random: false,
-              speed: 2,
-              straight: false,
-            },
-            number: {
-              density: {
+              move: {
+                direction: "none",
                 enable: true,
-                area: 800,
+                outModes: {
+                  default: "bounce",
+                },
+                random: false,
+                speed: 6,
+                straight: false,
               },
-              value: 80,
+              number: {
+                density: {
+                  enable: true,
+                  area: 800,
+                },
+                value: 80,
+              },
+              opacity: {
+                value: 0.5,
+              },
+              shape: {
+                type: "circle",
+              },
+              size: {
+                value: { min: 1, max: 5 },
+              },
             },
-            opacity: {
-              value: 0.5,
-            },
-            shape: {
-              type: "circle",
-            },
-            size: {
-              random: true,
-              value: 5,
-            },
-          },
-          detectRetina: true,
-        }}
-      />
+            detectRetina: true,
+          }}
+        />
+      )}
       <div className="text-center text-white relative z-10">
         <h1 className="text-4xl font-bold" ref={textRef}>
           Hi, I'm Abdul, I am a full stack developer
