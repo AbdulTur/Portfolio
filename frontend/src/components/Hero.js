@@ -3,7 +3,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
-import './Hero.css';
+import '../styles/Hero.css';
 
 const Hero = () => {
   const heroRef = useRef(null);
@@ -42,7 +42,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="hero h-screen flex items-center justify-center" ref={heroRef}>
+    <div className="hero" ref={heroRef}>
       {init && (
         <Particles
           id="tsparticles"
@@ -83,9 +83,9 @@ const Hero = () => {
               links: {
                 color: "#ffffff",
                 distance: 150,
-                enable: true,
-                opacity: 0.5,
-                width: 1,
+                enable: false,
+                opacity: 0.4,
+                width: 2,
               },
               move: {
                 direction: "none",
@@ -94,7 +94,7 @@ const Hero = () => {
                   default: "bounce",
                 },
                 random: false,
-                speed: 6,
+                speed: 2,
                 straight: false,
               },
               number: {
@@ -102,7 +102,7 @@ const Hero = () => {
                   enable: true,
                   area: 800,
                 },
-                value: 80,
+                value: 30,
               },
               opacity: {
                 value: 0.5,
@@ -111,7 +111,24 @@ const Hero = () => {
                 type: "circle",
               },
               size: {
-                value: { min: 1, max: 5 },
+                value: { min: 5, max: 15 },
+              },
+              interactivity: {
+                events: {
+                  onHover: {
+                    enable: true,
+                    mode: "bubble",
+                  },
+                  resize: true,
+                },
+                modes: {
+                  bubble: {
+                    distance: 200,
+                    duration: 2,
+                    size: 0,
+                    opacity: 0.8,
+                  },
+                },
               },
             },
             detectRetina: true,

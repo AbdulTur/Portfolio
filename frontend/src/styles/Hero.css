@@ -1,0 +1,19 @@
+/* src/components/Hero.css */
+.hero {
+  background-color: #000000; /* Dark background color */
+  height: 100vh; /* Ensures the hero section takes full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  opacity: 0; /* Set initial opacity to 0 for animation */
+  animation: fadeIn 1s forwards; /* Adds fade-in animation */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,14 @@
+/* src/styles/AboutMe.css */
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a; /* Slightly lighter dark background */
+  padding: 2rem; /* Add some padding */
+  color: white; /* Text color */
+}
+
+.about-me-image img {
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image covers the container */
+}
