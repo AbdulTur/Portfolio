@@ -1,15 +1,15 @@
-/* src/styles/App.css */
 .App {
-  min-height: 100vh; /* Allows the container to grow based on content */
-  overflow-y: auto; /* Enables vertical scrolling */
-  position: relative; /* Allows positioning of child elements */
+  background-color: rgba(0, 0, 0, 0);
+  min-height: 100vh; 
+  overflow-y: auto; 
+  position: relative; 
 }
 
 #tsparticles {
-  position: fixed; /* Ensures particles stay fixed while scrolling */
+  position: fixed; 
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  z-index: -1; /* Places particles behind the content */
+  z-index: -1; 
 }

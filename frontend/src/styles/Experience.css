@@ -1,0 +1,48 @@
+.separator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    opacity: 0.5;
+    margin: 0;
+}
+
+.experience-section {
+    background-color: transparent;
+    padding: 3rem;
+    color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.skills-circle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent; 
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.skill-icon {
+    margin: 1rem; 
+    font-size: 2.5rem; 
+    transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+    transform: scale(1.2);
+}
+
+.experience-details h3 {
+    font-size: 2.2rem;  
+}
+
+.experience-details p, .experience-details ul li {
+    font-size: 1.2rem;  
+}

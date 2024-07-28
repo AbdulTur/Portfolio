@@ -1,14 +1,44 @@
-/* src/styles/AboutMe.css */
-.about-me {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #1a1a1a; /* Slightly lighter dark background */
-  padding: 2rem; /* Add some padding */
-  color: white; /* Text color */
+.separator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  opacity: 0.5;
+  margin: 0;
+}
+
+
+.about-me-section {
+  background-color: rgba(0,0,0,0); 
+  padding: 3rem; 
+  color: white; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem; 
 }
 
 .about-me-image img {
   border-radius: 50%;
-  object-fit: cover; /* Ensures the image covers the container */
+  object-fit: cover; 
+}
+
+.about-me-icons a {
+  color: white;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; 
+}
+
+@media (min-width: 1024px) {
+  .about-me-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
