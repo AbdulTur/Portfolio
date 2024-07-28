@@ -11,7 +11,7 @@ The purpose of this repository is to host the code for my portfolio website, whi
 - **React**: Frontend library for building the user interface.
 - **GSAP**: Animation library for smooth transitions and animations.
 - **React Scroll**: Library for smooth scrolling navigation.
-- **CSS**: Styling for the components.
+- **Tailwind CSS**: Styling for the components.
 
 ## Contact
 
