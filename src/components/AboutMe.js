@@ -34,7 +34,7 @@ const AboutMe = () => {
             </p>
             <h3 className="text-3xl font-bold mb-4">Who am I?</h3>
             <p className="text-lg lg:text-xl">
-              Hi, I'm Abdul, a senior Computer Engineering student at Memorial University of Newfoundland with a passion for full-stack development and AI. I have hands-on experience with Java, Python, JavaScript, and frameworks like React and Flask. I've interned at Angler Solutions and Bluedrop ISM, where I improved system accuracy and developed advanced features. I'm eager to bring my skills to a leading tech company and contribute to innovative projects.
+              Hi, I'm Abdul, a senior Computer Engineering student at Memorial University of Newfoundland with a passion for full-stack development and AI. I have hands-on experience in frontend and backend web development, working with Java, Python, JavaScript, and frameworks like React and Flask. I've interned at Angler Solutions and Bluedrop ISM, where I improved system accuracy and developed advanced features. I'm eager to bring my skills to a leading tech company and contribute to innovative projects.
               <br />
               Let's connect and create something amazing together!
             </p>

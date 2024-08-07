@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaReact, FaNode, FaDatabase, FaDocker, FaPython, FaGitAlt, FaHtml5, FaCss3Alt, FaVuejs, FaJsSquare } from 'react-icons/fa';
+import { FaReact, FaNode, FaDocker, FaPython, FaGitAlt, FaHtml5, FaCss3Alt, FaVuejs, FaJsSquare } from 'react-icons/fa';
 import { SiTypescript, SiNuxtdotjs, SiPostgresql, SiFastapi, SiExpress, SiFlask, SiCplusplus, SiLinux, SiGnubash, SiJira, SiAstro, SiTailwindcss, SiGrafana, SiQt, SiPandas, SiNumpy} from 'react-icons/si';
 import '../styles/Experience.css';
 
@@ -10,12 +10,13 @@ const experiences = [
     period: "May 2024 – August 2024",
     location: "St. John's, NL, Canada", 
     details: [
-      "Implemented full-stack solutions enhancing frontend and backend integration with Vue, FastAPI, and PostgreSQL.",
-      "Corrected data transmission errors, increasing system accuracy by 50% with Vue and FastAPI.",
-      "Developed a password recovery system, reducing user recovery time by 30% with Nuxt and FastAPI.",
-      "Enhanced security with token automation, achieving 99.9% system uptime and minimizing access breaches.",
-      "Reduced API response times by 70% and improved data processing with Python and PostgreSQL.",
-      "Created a Random Forest model, predicting wind speeds with 95% accuracy, enhancing data analysis."
+      "Implemented full-stack solutions with Vue, TypeScript, FastAPI, and PostgreSQL, streamlining system operations.",
+      "Corrected data transmission errors, boosting system accuracy by 50% with Vue and FastAPI, ensuring reliable data flow.",
+      "Developed a password recovery system with Nuxt, TypeScript, and FastAPI, improving user experience and security.",
+      "Enhanced security with token automation, achieving 99.9% system uptime and minimizing unauthorized access incidents.",
+      "Created a Random Forest model, predicting wind speeds with 95% accuracy, improving data analysis.",
+      "Optimized SQL queries and database performance, enhancing data retrieval speed and reducing latency.",
+      "Increased backend data processing speed by 60% using Pandas and NumPy, cutting API response times by 70%"
     ],
     skills: [<FaJsSquare />, <SiTypescript />, <FaVuejs />, <FaPython />, <FaNode/>, <SiNuxtdotjs />, <SiPostgresql />, <FaDocker />, <SiFastapi />, <FaGitAlt />,<SiPandas />, <SiNumpy />, <FaHtml5 />, <FaCss3Alt />]
   },
@@ -25,11 +26,12 @@ const experiences = [
     period: "August 2023 – December 2023",
     location: "St. John's, NL, Canada", 
     details: [
-      "Implemented comprehensive user metrics tracking, covering 96% of user activities, enabling the monitoring of over 1000 active users monthly on the platform using JavaScript, React, and Grafana.",
-      "Enhanced web platform features, focusing on frontend improvements with JavaScript and React.",
-      "Utilized PostgreSQL for efficient data management and retrieval in application features.",
-      "Managed code updates and facilitated team collaboration using Git, Jira, and CI/CD pipelines.",
-      "Proactively identified and resolved critical bugs, significantly enhancing web platform stability and reducing downtime by 20%.",
+      "Enhanced web platform features, improving frontend performance and user experience with JavaScript and React.",
+      "Implemented user metrics tracking with JavaScript, React, and Grafana, covering 96% of activities for over 1000 users.",
+      "Utilized PostgreSQL for efficient data management and retrieval, improving application performance.",
+      "Managed code updates and collaboration for 30+ members using Git, Jira, and CI/CD.",
+      "Conducted unit testing, code reviews, and implemented CI/CD practices to ensure code quality and stability.",
+      "Proactively identified and resolved critical bugs, enhancing web platform stability and reducing downtime by 20%.",
       "Developed and modified RESTful APIs for dynamic data interaction, improving system integration using Express and Node.js."
     ],
     skills: [<FaReact />, <FaJsSquare />, <SiPostgresql />, <FaNode/>, <SiExpress />, <FaGitAlt />, <SiJira />, <SiGrafana />, <FaHtml5 />, <FaCss3Alt />]
@@ -43,7 +45,8 @@ const experiences = [
       "Integrated AI to generate website guides using API technology, reducing guide creation time by 50%.",
       "Designed a Python Flask-based REST API using OpenAI API to deliver dynamic data in real-time, improving response times for data retrieval.",
       "Created a responsive front-end with HTML, CSS, and JavaScript, interfacing with the Flask API, providing a seamless user experience.",
-      "Assisted in the creation of MUN web pages as a full stack developer using WordPress and T4, reducing content update time by 25%."
+      "Assisted in managing MUN web pages using WordPress and T4, streamlining content updates.",
+      "Enhanced website accessibility and performance, ensuring compliance with web standards and improving load times."
     ],
     skills: [<FaJsSquare />, <FaNode/>, <FaHtml5 />, <FaCss3Alt />, <SiFlask />, <FaReact />, <FaGitAlt />]
   },

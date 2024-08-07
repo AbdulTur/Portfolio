@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaReact, FaFileExcel, FaNode, FaDocker, FaPython, FaGitAlt, FaHtml5, FaCss3Alt, FaVuejs, FaJsSquare, FaJava, FaAndroid } from 'react-icons/fa';
-import { SiTypescript, SiDjango, SiAstro, SiTailwindcss, SiExpress, SiFastapi, SiFlask, SiCplusplus, SiLinux, SiGnubash, SiJira, SiPandas, SiNumpy, SiQt, SiDotnet, SiSqlite, SiPostgresql, SiSqlalchemy, SiFirebase, SiGrafana } from 'react-icons/si';
+import { FaReact, FaFileExcel, FaBootstrap,  FaNode, FaDocker, FaPython, FaGitAlt, FaHtml5, FaVuejs, FaJsSquare, FaJava, FaAndroid } from 'react-icons/fa';
+import { SiTypescript, SiMongodb,  SiDjango, SiAstro, SiTailwindcss, SiExpress, SiFastapi, SiFlask, SiCplusplus, SiLinux, SiGnubash, SiJira, SiPandas, SiNumpy, SiQt, SiDotnet, SiSqlite, SiPostgresql, SiSqlalchemy, SiFirebase, SiGrafana } from 'react-icons/si';
 import { PiDotsNineBold } from "react-icons/pi";
 import '../styles/TechnicalSkills.css';
 
@@ -38,7 +38,9 @@ const skills = [
   { name: "Excel", icon: <FaFileExcel /> },
   { name: "ROS2", icon: <PiDotsNineBold /> },
   { name: "Astro", icon: <SiAstro /> },
-  { name: "Tailwind.css", icon: <SiTailwindcss /> }
+  { name: "Tailwind.css", icon: <SiTailwindcss /> },
+  { name: "Bootstrap", icon: <FaBootstrap /> },
+  { name: "MongoDB", icon: <SiMongodb /> }
 ];
 
 const TechnicalSkills = () => {

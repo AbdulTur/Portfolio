@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaReact, FaJava, FaAndroid, FaDatabase, FaPython, FaHtml5, FaCss3Alt, FaVuejs, FaJsSquare, FaArrowRight } from 'react-icons/fa';
-import { SiTypescript, SiFlask, SiPostgresql, SiLinux, SiTailwindcss, SiSqlite, SiFirebase } from 'react-icons/si';
+import { FaReact, FaJava, FaAndroid, FaBootstrap, FaPython, FaHtml5, FaCss3Alt, FaJsSquare, FaArrowRight } from 'react-icons/fa';
+import { SiFlask, SiTailwindcss, SiSqlite, SiFirebase, SiExpress, SiMongodb } from 'react-icons/si';
 import '../styles/Projects.css';
 
 const projects = [
@@ -20,14 +20,14 @@ const projects = [
   },
   {
     title: "CarbonRepay",
-    link: "https://github.com/AbdulTur/CarbonRepay",
+    link: "https://carbonrepay-bb68f998cf59.herokuapp.com",
     image: `${process.env.PUBLIC_URL}/images/CarbonRepay.png`,
-    description: "Carbon Repay is a single-page website that helps companies track their transportation-related carbon emissions and offset them through donations. It provides a user-friendly interface to monitor distance traveled, calculate emissions, and determine the corresponding donation amounts.",
-    skills: [FaJsSquare, FaReact, FaHtml5, FaCss3Alt]
+    description: "CarbonRepay is a web application that helps individuals and companies track and offset their transportation-related carbon emissions. It features a user-friendly interface for inputting vehicle data, monitoring distances traveled, and calculating emissions. The platform also enables companies to aggregate fleet data for better environmental accountability and facilitates donations to offset carbon footprints.",
+    skills: [FaJsSquare, FaReact, FaBootstrap, SiExpress, SiMongodb ]
   },
   {
     title: "Portfolio Website",
-    link: "#",
+    link: "https://github.com/AbdulTur/Portfolio",
     image: null,
     description: "This portfolio website showcases various projects and experiences.",
     skills: [FaJsSquare, FaReact, FaHtml5, FaCss3Alt]
