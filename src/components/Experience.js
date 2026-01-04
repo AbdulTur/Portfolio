@@ -1,9 +1,50 @@
 import React from 'react';
-import { FaReact, FaNode, FaDocker, FaPython, FaGitAlt, FaHtml5, FaCss3Alt, FaVuejs, FaJsSquare } from 'react-icons/fa';
+import { FaReact, FaNode, FaDocker, FaPython, FaJava, FaAws, FaGitAlt, FaHtml5, FaCss3Alt, FaVuejs, FaJsSquare } from 'react-icons/fa';
 import { SiTypescript, SiNuxtdotjs, SiPostgresql, SiFastapi, SiExpress, SiFlask, SiCplusplus, SiLinux, SiGnubash, SiJira, SiAstro, SiTailwindcss, SiGrafana, SiQt, SiPandas, SiNumpy} from 'react-icons/si';
 import '../styles/Experience.css';
 
+
 const experiences = [
+  {
+    title: "Software Development Engineer Intern",
+    company: "Amazon Robotics",
+    period: "August 2025 – December 2025",
+    location: "Toronto, Canada",
+    details: [
+      "Built a pod stability analytics dashboard using React and TypeScript, visualizing real-time distributions to support faster robotics diagnostics.",
+      "Implemented a bin restriction removal workflow with a React frontend and Java-based AWS Lambda backend, safely updating production records in DynamoDB.",
+      "Designed an image ingestion pipeline for pod damage reporting, validating uploads via Amazon Rekognition and persisting images and metadata to S3 and DynamoDB.",
+      "Enabled analytics and reporting by publishing deletion records to a centralized data lake using Amazon Kinesis and querying results with Amazon Athena.",
+      "Defined and deployed production infrastructure using AWS CDK (TypeScript), ensuring reliable and observable service integrations."
+    ],
+    skills: [
+      <FaReact />,
+      <SiTypescript />,
+      <FaJava />,
+      <FaAws />,
+      <FaDocker />,
+      <FaGitAlt />
+    ]
+  },
+
+  {
+    title: "Software Development Engineer Intern",
+    company: "Amazon Robotics",
+    period: "January 2025 – May 2025",
+    location: "Toronto, Canada",
+    details: [
+      "Rebuilt a critical stability history reporting system, designing a scalable backend using AWS EventBridge, SQS, Lambda, and DynamoDB.",
+      "Developed services to aggregate real-time pod stability and bin mass metrics, improving operational visibility across fulfillment centers.",
+      "Reduced end-to-end reporting latency by over 50% compared to the legacy pipeline, accelerating debugging of high-severity robotics issues.",
+      "Improved data freshness and reliability by implementing scheduled refresh workflows and resilient post-processing for delayed data."
+    ],
+    skills: [
+      <FaJava />,
+      <FaAws />,
+      <FaDocker />,
+      <FaGitAlt />
+    ]
+  },
   {
     title: "Software Developer Intern",
     company: "Angler Solutions Inc.",
